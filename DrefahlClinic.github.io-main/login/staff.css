@@ -1,0 +1,331 @@
+/* Define color variables */
+:root {
+    --white-color: #FFFFFF;
+    --primary-color: #247cff;
+    --section-bg-color: #F9F9F9;
+    --dark-color: #000000;
+    --title-color: #565758;
+    --p-color: #717275;
+    --border-color: #eaeaea;
+  }
+  
+  /* Apply the styles to your HTML elements */
+  body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--white-color);
+    color: var(--dark-color);
+  }
+  
+  header {
+    background-color:#f8f9fa;
+    color: #247cff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #schedule {
+    background-color: var(--white-color);
+    color: #1e63d7;
+    flex: 30%;
+    text-align: center;
+    border: 5px solid #247cff;
+    border-radius: 5px;
+    border-style: groove;
+    padding: 20px;
+    max-width: 35%;
+    margin-left: 20px;
+  }
+  
+
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Reset some default browser styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the navbar */
+/* Reset some default browser styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Style the navbar */
+nav {
+    background-color: #f8f9fa; /* Use your primary color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color:#247cff;
+}
+
+/* Style the left and right sides of the navbar */
+.navbar-left,
+.navbar-right {
+    display: flex;  /* Center the options horizontally */
+    align-items: center;
+    flex: 1;
+}
+
+.navbar-left{
+  justify-content: right;
+}
+
+.navbar-right{
+  justify-content: left;
+}
+
+/* Style the center of the navbar */
+.navbar-center {
+    text-align: center;
+    flex: 1;
+    color: #1e63d7; /* Use your text color */
+}
+
+/* Style the title and subtitle */
+.navbar-center h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-color);
+  font-size: 35px;
+  padding: 0;
+}
+
+.navbar-center h2 {
+  font-family: 'Open Sans', sans-serif;
+  color: var(--p-color);
+  font-size: 18px;
+  position: relative;
+  bottom: 5px;
+}
+
+/* Style the options (links) */
+.navbar-left a,
+.navbar-right a {
+    color: #1e63d7; /* Use your text color */
+    text-decoration: none;
+    margin: 10px 30px; /* Adjust the margin to control spacing */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Add any additional styling as needed */
+
+  nav h2{
+    color: white;
+  }
+
+/* Add any additional styling as needed */
+
+  
+  main {
+    padding: 20px;
+    background-color: var(--section-bg-color);
+  }
+  
+  #upper-section {
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+  }
+
+  
+  form {
+    position: relative;
+    color: #1e63d7;
+    display: flex;
+    flex: 30%;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  #obs{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    height: 100px;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  button[type="submit_2"] {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin-left: 46%;
+  }
+  
+  button[type="submit_2"]:hover {
+    margin: 0 auto;
+    background-color: #1e63d7;
+    align-items: center;
+    margin-left: 46%;
+  }
+
+
+  button[type="submit"]:hover {
+    margin: 0 auto;
+    background-color: #1e63d7;
+    align-items: center;
+  }
+  
+  /* Add styles for the appointment table and filters */
+  #appointments{
+    align-items: center;
+    justify-content: center;
+    flex: 70%;
+    height: 700px;
+    border: 3px solid var(--border-color);
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #appointments h2{
+    text-align: center;
+    margin: 13px 0 10px;
+  }
+  
+  #appointment-table {
+    background-color: var(--white-color);
+    margin-left: 23px;
+    margin-right: 23px;
+  
+  }
+  
+  #filter-options {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #filter-options label {
+    margin-right: 10px;
+    color: var(--title-color);
+  }
+  
+  #filter-name {
+    padding: 5px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+  }
+
+  .upper-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid var(--border-color);
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* Style the table header row */
+  thead {
+    background-color: var(--section-bg-color);
+  }
+  
+  /* Style the table rows */
+  tbody tr:nth-child(even) {
+    background-color: var(--section-bg-color);
+  }
+
+  #formtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  #formtitle img {
+    /* Add styling for the image */
+    max-width: 100px; /* Adjust the width as needed */
+    margin-right: 20px; /* Add some spacing between the image and text */
+    
+  }
+  
+  
+  /* Style the "Upcoming" status for appointments */
+  tbody tr[data-status="Scheduled"] {
+    background-color: #f5f7ff;
+  }
+
+  /* Center the "Delete" button */
+/* Center and vertically align the "Delete" button */
+.delete-button {
+  background-color: #1e63d7;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  line-height: 2; /* Adjust this value to vertically center the button */
+}
+
+  
+#show-all-appointments{
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  padding: 5px 20px;
+  font-size: 13px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+  /* Add any additional styling as needed */
+  
