@@ -139,6 +139,6 @@ app.get('/generate-keys', (req, res) => {
     res.json({ keys: randomKeys });
   });
 
-app.listen(PORT, '13.59.63.158', () => {
-  console.log(`Server is running on 13.59.63.158${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
