@@ -62,7 +62,7 @@ function createTableRow(date, time, patientName, patientPhone, doctor, status, o
       const idToDelete = appointments[rowIndex].primary;
     
       // Call the delete endpoint to remove the appointment from DynamoDB
-      fetch(`http://localhost:3001/api/appointments/${idToDelete}`, {
+      fetch(`http://13.59.63.158:8081/api/appointments/${idToDelete}`, {
         method: 'DELETE',
       })
       .then(response => {
@@ -146,7 +146,7 @@ function createTableRow(date, time, patientName, patientPhone, doctor, status, o
 }
 
 function getAppointmentsFromAPI() {
-    return fetch('http://localhost:3001/api/appointments')
+    return fetch('http://13.59.63.158:8081/api/appointments')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Error fetching appointments');
@@ -175,7 +175,7 @@ function getAppointmentsFromAPI() {
         });
 }
 function updateAppointmentStatusInAPI(appointmentId, newStatus) {
-    return fetch(`http://localhost:3001/api/appointments/${appointmentId}`, {
+    return fetch(`http://13.59.63.158:8081/api/appointments/${appointmentId}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -196,7 +196,7 @@ function updateAppointmentStatusInAPI(appointmentId, newStatus) {
   }
   
   function saveAppointmentToAPI(appointment) {
-    return fetch('http://localhost:3001/api/appointments', {
+    return fetch('http://13.59.63.158:8081/api/appointments', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -250,7 +250,7 @@ function deleteAppointment(appointmentId) {
     const idToDelete = appointmentId;
 
     // Call the delete endpoint to remove the appointment from DynamoDB
-    fetch(`http://localhost:3001/api/appointments/${idToDelete}`, {
+    fetch(`http://13.59.63.158:8081/api/appointments/${idToDelete}`, {
         method: 'DELETE',
     })
         .then(response => {
