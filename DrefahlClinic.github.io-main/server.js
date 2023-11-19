@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 const AWS = require('aws-sdk');
 const db = require('./database'); 
 const app = express();
-const PORT = 3001;
+const PORT = 8081;
 const { v4: uuidv4 } = require('uuid'); 
 
 app.use(cors());
@@ -139,6 +139,6 @@ app.get('/generate-keys', (req, res) => {
     res.json({ keys: randomKeys });
   });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(PORT, '13.59.63.158', () => {
+  console.log(`Server is running on 13.59.63.158${PORT}`);
 });
